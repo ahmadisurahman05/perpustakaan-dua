@@ -44,6 +44,7 @@ code {
 </style>
 </head>
 <body>
+<BR /><a href="<?php echo base_url()."index.php/logout"?>">logout</a>
 
 <h1>Welcome to CodeIgniter!</h1>
 
