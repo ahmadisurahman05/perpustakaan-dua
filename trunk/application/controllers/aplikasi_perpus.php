@@ -1,0 +1,1 @@
+<?phpclass Aplikasi_perpus extends CI_Controller {	function __construct() {		parent::__construct();	if ($this->session->userdata('username')=='' && $this->session->userdata('password') =='') {	redirect ('login');	}	}	function index() {		$data['teks'] = "Helo World";			$data['main_view']='view_home.php';		$this->load->view('tampil.php',$data);	}}?>

@@ -19,9 +19,11 @@ class Login extends CI_Controller {
 			$this->session->set_userdata('username',$username);
 			$this->session->set_userdata('password',$password);
 			$lihatsesi=$this->session->userdata('username');
+			
 
-				redirect('aplikasi_perpus');
-			echo "anda berhasil";
+
+			redirect('aplikasi_perpus');
+//			echo "anda berhasil";
 			}
 			else
 			{
@@ -31,9 +33,9 @@ class Login extends CI_Controller {
 		}
 		else
 		{
-
+//		$data='login';
 		$data['main_view']='view_login.php';
-		$this->load->view('index.php',$data);
+		$this->load->view('tampil.php',$data);
 		}
 		}
 }
